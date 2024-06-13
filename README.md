@@ -3,3 +3,6 @@
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+For more information, you can contact us through victor.sanchezarevalo@ufv.es or luis.bote@urjc.es.
