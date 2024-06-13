@@ -5,10 +5,10 @@
 ```python
 from pymportx import salmon
 
-results = read_salmon(salmon_folder_paths,
-                      tx_out=False,
-                      tx2gene=tx2gene_file_path,
-                      countsFromAbundance='no')
+results = salmon.read_salmon(salmon_folder_paths,
+                             tx_out=False,
+                             tx2gene=tx2gene_file_path,
+                             countsFromAbundance='no')
 ```
 
 ## Citation
