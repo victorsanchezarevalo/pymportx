@@ -3,7 +3,7 @@
 
 ## Example
 ```python
-from pymport import salmon
+from pymportx import salmon
 
 results = read_salmon(salmon_folder_paths,
                       tx_out=False,
