@@ -13,7 +13,7 @@ results = read_salmon(salmon_folder_paths,
 
 ## Citation
 
-If you use `pytximport` in your research, please cite the following paper:
+If you use `pymportx` in your research, please cite the following paper:
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
