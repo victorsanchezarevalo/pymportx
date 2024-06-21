@@ -39,7 +39,7 @@ Its first column should contain transcript IDs, while the second one must contai
 
 #### Salmon
 
-Use the main function `salmon.read_salmon()` with the appropriate arguments described in the [**pymportx**](http://127.0.0.1:8000/index%20copia/#:~:text=API-,PyTximport,-Pytximport%20main%20function) section.
+Use the main function `salmon.read_salmon()` with the appropriate arguments described in the [**pymportx**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=Edit%20on%20GitHub-,pymportx,-Here%20the%20main)section.
 
 ```python
 from pymportx import salmon
@@ -53,7 +53,7 @@ out = salmon.read_salmon(folders,
 
 #### Sailfish
 
-Use the main function `sailfish.read_sailfish()` with the appropriate arguments described in the [**pymportx**](http://127.0.0.1:8000/index%20copia/#:~:text=API-,PyTximport,-Pytximport%20main%20function) section.
+Use the main function `sailfish.read_sailfish()` with the appropriate arguments described in the [**pymportx**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=Edit%20on%20GitHub-,pymportx,-Here%20the%20main) section.
 
 ```python
 from pymportx import sailfish
@@ -66,7 +66,7 @@ out = sailfish.read_sailfish(folders,
 
 #### kallisto
 
-Use the main function `kallisto.read_kallisto()` with the appropriate arguments described in the [**pymportx**](http://127.0.0.1:8000/index%20copia/#:~:text=API-,PyTximport,-Pytximport%20main%20function) section.
+Use the main function `kallisto.read_kallisto()` with the appropriate arguments described in the [**pymportx**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=Edit%20on%20GitHub-,pymportx,-Here%20the%20main) section.
 
 ```python
 from pymportx import sailfish
@@ -79,7 +79,7 @@ out = kallisto.read_kallisto(folders,
 
 #### RSEM
 
-Use the main function `rsem.read_rsem()` with the appropriate arguments described in the [**pymportx**](http://127.0.0.1:8000/index%20copia/#:~:text=API-,PyTximport,-Pytximport%20main%20function) section.
+Use the main function `rsem.read_rsem()` with the appropriate arguments described in the [**pymportx**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=Edit%20on%20GitHub-,pymportx,-Here%20the%20main) section.
 
 ```python
 from pymportx import rsem
