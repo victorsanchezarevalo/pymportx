@@ -1,4 +1,3 @@
-![Foto](Logo.png)
 
 Here the main arguments of the package functions are described:
 
@@ -20,18 +19,6 @@ This main functions have the following arguments:
 |`ignoreTxVersion` | Whether to ignore transcript isoforms by removing the version number from the transcriptID after the period ' . ' . |  
 |`ignoreAfterBar` |Whether to ignore transcriptID characters after the bar ' / '. | 
 
-
-### *countsFromAbundance:
-
-This ``countsFromAbundance`` argument could be set to either:
-
-* **" no "** (default) : Determining whether to produce estimated counts using abundance estimations.
-
-* **" scaledTPM "** : Obtain estimated counts scaled up to library size.
-
-* **" lengthScaledTPM "** : Adjusted by utilizing the mean transcript length across samples,    followed by the library size.
-
-* **" dtuScaledTPM "** : Obtain estimated counts scaled by employing the median length of transcripts within gene isoforms, followed by the library size.
 
 ## RSEM
 
