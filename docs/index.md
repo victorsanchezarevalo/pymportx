@@ -39,7 +39,7 @@ Its first column should contain transcript IDs, while the second one must contai
 
 #### Salmon
 
-Use the main function `salmon.read_salmon()` with the appropriate arguments described in the [**pymportx**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=Edit%20on%20GitHub-,pymportx,-Here%20the%20main)section.
+Use the main function `salmon.read_salmon()` with the appropriate arguments described in the [**pymportx**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=Edit%20on%20GitHub-,pymportx,-Here%20the%20main) section.
 
 ```python
 from pymportx import salmon
