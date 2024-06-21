@@ -31,7 +31,7 @@ The arguments for ``rsem.read_rsem()`` are detailed in the following table:
 |`tx_in` | Boolean argument. Default is True for trasncript-level input. Set to False for transcript-level output. |     
 |`tx_out` | Boolean argument. Default is False for gene-level output. Set to True for transcript-level output.  |
 |`tx2gene` | A two-column .csv file containing gene annotations: transcript ID in the first column and and gene ID in the second column.| 
-|`countsFromAbundance` | Could be set to either: **" no "** (default), **" scaledTPM "**, **" lengthScaledTPM "**, **" dtuScaledTPM "**. See [**countsFromAbundance**](http://127.0.0.1:8000/index%20copia/#:~:text=*countsFromAbundance%3A) for more detail.| 
+|`countsFromAbundance` | Could be set to either: **" no "** (default), **" scaledTPM "**, **" lengthScaledTPM "**, **" dtuScaledTPM "**. See [**countsFromAbundance**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=*-,countsFromAbundance,-%3A) for more detail.| 
 |`ignoreTxVersion` | Whether to ignore transcript isoforms by removing the version number from the transcriptID after the period ' . ' . |  
 |`ignoreAfterBar` |Whether to ignore transcriptID characters after the bar ' / '. | 
 
