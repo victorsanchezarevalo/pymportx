@@ -1,7 +1,5 @@
 
 
-![Foto](Logo.png)
-
 #**Welcome to the pymportx documentation site!**
 
 
@@ -21,9 +19,9 @@ We will start by creating a list of paths for each sample contained in the outpu
 
 
 ```python
-files = ["quant_FilePath_Sample1", "quant_FilePath_Sample2", ...]
+folders = ["quant_FilePath_Sample1", "quant_FilePath_Sample2", ...]
 #OR
-files = list("quant_FilePath_Sample1", "quant_FilePath_Sample2", ...)
+folders = list("quant_FilePath_Sample1", "quant_FilePath_Sample2", ...)
 ```
 
 Next, the path to a two column transcript annotation file in .csv format must be provided: 
