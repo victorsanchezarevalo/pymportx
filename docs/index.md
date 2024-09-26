@@ -128,7 +128,9 @@ Or even their variance, configuring `varReduce = True` :
 
 ![InfReps](InfReps_var.png)
 
-![InfReps](GráficoAnndata.png)
+An Anndata Python file:
+
+![Anndata](GráficoAnndata.png)
 
 
 ## License
