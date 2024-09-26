@@ -128,6 +128,8 @@ Or even their variance, configuring `varReduce = True` :
 
 ![InfReps](InfReps_var.png)
 
+![InfReps](GráficoAnndata.png)
+
 
 ## License
 
