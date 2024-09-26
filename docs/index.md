@@ -130,7 +130,7 @@ Or even their variance, configuring `varReduce = True` :
 
 An Anndata Python file:
 
-![Anndata](GráficoAnndata.png)
+![Anndata](docs/GráficoAnndata.png)
 
 
 ## License
