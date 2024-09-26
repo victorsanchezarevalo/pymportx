@@ -128,9 +128,9 @@ Or even their variance, configuring `varReduce = True` :
 
 ![InfReps](InfReps_var.png)
 
-An Anndata Python file:
+The Output Anndata Python file will have the following structure:
 
-![Anndata]([docs/GráficoAnndata.png](https://github.com/victorsanchezarevalo/pymportx/blob/5d0a46c6edb58fb779c7781fb326fa3e8934f4ec/docs/Gra%CC%81ficoAnndata.png))
+![Anndata](GráficoAnndata.png)
 
 
 ## License
