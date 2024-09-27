@@ -8,6 +8,16 @@ As mentioned [before](https://pymportx.readthedocs.io/en/latest/#:~:text=Its%20u
 ## Downstream Analysis Packages
 ---
 
-### PyDESeq2
+### PyDESeq2 and DecoupleR
+
+```
+wgcna = PyWGCNA.WGCNA(anndata=adata_cleaned)
+ 
+wgcna.preprocess()
+ 
+wgcna.findModules()
+ 
+wgcna.analyseWGCNA()
+``
 
 ### PyWGCNA
