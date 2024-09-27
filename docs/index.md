@@ -14,14 +14,14 @@ Based on the [`tximport`](https://bioconductor.org/packages/release/bioc/html/tx
 
 ## Prerequisites
 
-Before installing `pymportx`, ensure you have the following prerequisites:
+Before installing **`pymportx`**, ensure you have the following prerequisites:
 
 - **Python 3.6 or later**: You can download it from the official [Python website](https://www.python.org/).
 - **pip**: The Python package installer. You can install pip by following the instructions [here](https://pip.pypa.io/en/stable/installation/).
 
 ## Installation
 
-You can install `pymportx` via `pip`, the recommended Python package manager. Follow the steps below to install the package:
+You can install **`pymportx`** via `pip`, the recommended Python package manager. Follow the steps below to install the package:
 
 ### 1. Open a terminal or command prompt
 
@@ -29,7 +29,7 @@ Open your terminal (Linux/macOS) or command prompt (Windows).
 
 ### 2. Run the following command
 
-Install `pymportx` by executing the following pip command:
+Install **`pymportx`** by executing the following pip command:
 
 ```bash
 pip install pymportx
