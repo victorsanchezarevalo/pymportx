@@ -8,7 +8,53 @@ As mentioned [before](https://pymportx.readthedocs.io/en/latest/#:~:text=Its%20u
 ## Downstream Analysis Packages
 ---
 
-### PyDESeq2 and DecoupleR
+### PyDESeq2 and decoupleR
+
+The `anndata` output from **`pymportx`** can be used so as to perform a Differential Expression Analysis using PyDESeq2. Other analyses, such as reads quality control or volcano plotting, can be also conducted using the decoupleR package. Click on the links to access their documentation for more details.
+
+Here is an example for Differential Expression Analysis using PyDESeq2:
+
+```
+# Import
+from pydeseq2.dds import DeseqDataSet, DefaultInference
+from pydeseq2.ds import DeseqStats
+```
+```
+# Build DESeq2 object
+inference = DefaultInference(n_cpus=8)
+dds = DeseqDataSet(
+    adata=adata,
+    design_factors='condition',
+    refit_cooks=True,
+    inference=inference,
+)
+```
+
+```
+# Compute LFCs
+dds.deseq2()
+```
+```
+# Extract contrast between COVID-19 vs normal
+stat_res = DeseqStats(
+    dds,
+    contrast=["condition", 'treatment', 'control'],
+    inference=inference
+)```
+
+```
+# Compute Wald test
+stat_res.summary()```
+
+```
+# Extract results
+results_df = stat_res.results_df
+results_df```
+
+
+### PyWGCNA
+
+
 
 ```
 wgcna = PyWGCNA.WGCNA(anndata=adata_cleaned)
@@ -18,6 +64,4 @@ wgcna.preprocess()
 wgcna.findModules()
  
 wgcna.analyseWGCNA()
-``
-
-### PyWGCNA
+```
