@@ -93,7 +93,9 @@ out = rsem.read_rsem(folders,
 
 ## Output
 
-The output of our **``pymportx``** package is a dictionary containing three core DataFrames: 
+The output of our **``pymportx``** package is an [**Anndata**](https://anndata.readthedocs.io/en/latest/) file containing the counts, abundance and legth matrices. Its structure is the following:
+
+![Anndata](Grafico_Anndata.png)
 
 **'counts'**: 
 
