@@ -1,4 +1,4 @@
-### Workflow
+# Workflow
 Here the different analysis pipelines, when using **`pymportx`**, are described.
 
 ## Previous packages
