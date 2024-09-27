@@ -4,6 +4,7 @@ site_description: This is the pymportx Python package documentation site.
 nav:
   - Home: index.md
   - pymportx: index copia.md
+  - Workflow: about.md
 theme: readthedocs
 repo_url: https://github.com/victorsanchezarevalo/pymportx
 site_url: https://github.com/victorsanchezarevalo/pymportx
