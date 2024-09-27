@@ -13,7 +13,9 @@ Based on the [`tximport`](https://bioconductor.org/packages/release/bioc/html/tx
 * Increased sensitivity is achieved by retaining fragments capable of aligning to multiple genes with homologous sequences.
 
 ## Prerequisites
----
+-----
+****
+____
 
 Before installing **`pymportx`**, ensure you have the following prerequisites:
 
