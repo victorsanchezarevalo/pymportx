@@ -3,6 +3,7 @@
 Here the main arguments of the package functions are described:
 
 ## Salmon, Sailfish or kallisto
+---
 
  ``salmon.read_salmon()``, ``sailfish.read_sailfish()``, `kallisto.read_kallisto()`
 
@@ -22,6 +23,7 @@ This main functions have the following arguments:
 
 
 ## RSEM
+---
 
 The arguments for ``rsem.read_rsem()`` are detailed in the following table:
 
