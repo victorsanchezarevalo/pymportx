@@ -25,7 +25,7 @@ inference = DefaultInference(n_cpus=8)
 dds = DeseqDataSet(adata=adata,
     design_factors='condition',
     refit_cooks=True,
-    inference=inference,)
+    inference=inference)
 ```
 
 ```pyhton
@@ -36,8 +36,7 @@ dds.deseq2()
 # Extract contrast between COVID-19 vs normal
 stat_res = DeseqStats(dds,
     contrast=["condition", 'treatment', 'control'],
-    inference=inference
-)
+    inference=inference)
 ```
 
 ```python
