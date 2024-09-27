@@ -14,41 +14,38 @@ The `anndata` output from **`pymportx`** can be used to perform a Differential E
 
 Here is an example for Differential Expression Analysis using PyDESeq2:
 
-```
-# Import
+```python
+# Import PyDESeq2
 from pydeseq2.dds import DeseqDataSet, DefaultInference
 from pydeseq2.ds import DeseqStats
 ```
-```
+```python
 # Build DESeq2 object
 inference = DefaultInference(n_cpus=8)
-dds = DeseqDataSet(
-    adata=adata,
+dds = DeseqDataSet(adata=adata,
     design_factors='condition',
     refit_cooks=True,
-    inference=inference,
-)
+    inference=inference,)
 ```
 
-```
+```pyhton
 # Compute LFCs
 dds.deseq2()
 ```
-```
+```python
 # Extract contrast between COVID-19 vs normal
-stat_res = DeseqStats(
-    dds,
+stat_res = DeseqStats(dds,
     contrast=["condition", 'treatment', 'control'],
     inference=inference
 )
 ```
 
-```
+```python
 # Compute Wald test
 stat_res.summary()
 ```
 
-```
+```python
 # Extract results
 results_df = stat_res.results_df
 results_df
