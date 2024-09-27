@@ -12,7 +12,7 @@ As mentioned [before](https://pymportx.readthedocs.io/en/latest/#:~:text=Its%20u
 
 The `anndata` output from **`pymportx`** can be used to perform a Differential Expression Analysis using [PyDESeq2](https://pydeseq2.readthedocs.io/en/latest/). Other analyses, such as reads quality control or volcano plotting, can be also conducted using the [decoupleR](https://decoupler-py.readthedocs.io/en/latest/notebooks/bulk.html#Quality-control) package. Click on the links to access their documentation for more details.
 
-Here is an example for Differential Expression Analysis using PyDESeq2:
+Here is an example for Differential Expression Analysis using PyDESeq2 taken from [decoupleR documentation](https://decoupler-py.readthedocs.io/en/latest/notebooks/bulk.html#Differential-expression-analysis):
 
 ```python
 # Import PyDESeq2
