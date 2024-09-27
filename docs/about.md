@@ -20,7 +20,7 @@ from pydeseq2.dds import DeseqDataSet, DefaultInference
 from pydeseq2.ds import DeseqStats
 ```
 ```python
-# Build DESeq2 object
+# Build PyDESeq2 object
 inference = DefaultInference(n_cpus=8)
 dds = DeseqDataSet(adata=adata,
     design_factors='condition',
