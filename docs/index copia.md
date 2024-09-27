@@ -15,13 +15,13 @@ This main functions have the following arguments:
 |`tx_out` | Boolean argument. Default is False for gene-level output. Set to True for transcript-level output.  |
 |`tx2gene` | A two-column .csv file containing gene annotations: transcript ID in the first column and and gene ID in the second column.| 
 |`countsFromAbundance` | Could be set to either: **" no "** (default), **" scaledTPM "**, **" lengthScaledTPM "**, **" dtuScaledTPM "**. See [**countsFromAbundance**](https://pymportx.readthedocs.io/en/latest/index%20copia/#:~:text=*-,countsFromAbundance,-%3A) for more detail.|  
-|`dropInfReps` | Whether to skip inferential replicates read or not (default is False).|
+|`dropInfReps` | Whether to skip inferential replicates read or not (default is False)<sup>1</sup>.|
 |`varReduce` | Whether to condense per-sample inferential replicated into a matrix displaying sample variances (default is False).|
 |`infRepStat`| A predefined function to operate over rows of inferential replicates (default is median over rows).|
 |`ignoreTxVersion` | Whether to ignore transcript isoforms by removing the version number from the transcriptID after the period ' . ' . |  
 |`ignoreAfterBar` |Whether to ignore transcriptID characters after the bar ' / '. | 
 
-Additionally to RSEM; Salmon, Sailfish, and kallisto users have the option to include inferential replicates (DropInfReps = False) of each sample in another matrix.
+<sup>1</sup> Salmon, Sailfish, and kallisto users have the option to include inferential replicates (DropInfReps = False) of each sample in another matrix.
 
 ## RSEM
 ---
