@@ -13,6 +13,7 @@ Based on the [`tximport`](https://bioconductor.org/packages/release/bioc/html/tx
 * Increased sensitivity is achieved by retaining fragments capable of aligning to multiple genes with homologous sequences.
 
 ## Prerequisites
+---
 
 Before installing **`pymportx`**, ensure you have the following prerequisites:
 
@@ -20,6 +21,7 @@ Before installing **`pymportx`**, ensure you have the following prerequisites:
 - **pip**: The Python package installer. You can install pip by following the instructions [here](https://pip.pypa.io/en/stable/installation/).
 
 ## Installation
+---
 
 You can install **`pymportx`** via `pip`, the recommended Python package manager. Follow the steps below to install the package:
 
@@ -36,6 +38,7 @@ pip install pymportx
 ```
 
 ## Data Preparation
+---
 
 We will start by creating a list of paths for each sample contained in the output directory of the upstream quantification method used:
 
