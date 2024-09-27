@@ -126,23 +126,6 @@ The output of our **``pymportx``** package is an [**Anndata**](https://anndata.r
 
 See the [Workflow](https://pymportx.readthedocs.io/en/latest/about/#:~:text=Edit%20on%20GitHub-,Workflow,-Here%20the%20different) section for more details on downstream analysis using **`pymportx`**.
 
-**'counts'**: 
-
-	out['counts']
-
-![Counts](txi[counts].png)
-
-**'abundance'** :
-
-	out['abundance']
-
-![Abundances](txi[abundance].png)
-
-**'length'** : 
-
-	out['length']
-
-![Length](txi[length].png)
 
 
 Additionally, Salmon, Sailfish, and kallisto users have the option to include inferential replicates (`DropInfReps = False`) of each sample in another DataFrame nested dictionary. The DataFrame for the inferential replicates of the first sample:
