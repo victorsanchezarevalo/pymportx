@@ -124,6 +124,8 @@ The output of our **``pymportx``** package is an [**Anndata**](https://anndata.r
 
 ![Anndata](Grafico_Anndata.png)
 
+See the [Workflow](https://pymportx.readthedocs.io/en/latest/about/#:~:text=Edit%20on%20GitHub-,Workflow,-Here%20the%20different) section for more details on downstream analysis using **`pymportx`**.
+
 **'counts'**: 
 
 	out['counts']
