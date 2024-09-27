@@ -21,7 +21,7 @@ This main functions have the following arguments:
 |`ignoreTxVersion` | Whether to ignore transcript isoforms by removing the version number from the transcriptID after the period ' . ' . |  
 |`ignoreAfterBar` |Whether to ignore transcriptID characters after the bar ' / '. | 
 
-<sup>1</sup> Salmon, Sailfish, and kallisto users have the option to include inferential replicates (DropInfReps = False) of each sample in another matrix.
+<sup>1</sup> Salmon, Sailfish, and kallisto users have the option to include inferential replicates (`DropInfReps = False`) of each sample in a separate matrix. Alternatively, they can include the variance by setting `varReduce = True`.
 
 ## RSEM
 ---
