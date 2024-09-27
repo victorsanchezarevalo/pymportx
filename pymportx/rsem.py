@@ -4,6 +4,7 @@ import os
 import glob
 import warnings
 from .auxiliary_functions import *
+import anndata as ad
 
 def read_rsem(folders,
                 tx_in =True,
@@ -13,23 +14,19 @@ def read_rsem(folders,
                 ignoreTxVersion=False,
                 ignoreAfterBar=False):
 
-    # Check if folders is a non-empty list of strings
     if not isinstance(folders, list) or not folders:
         raise ValueError("Folders must be a non-empty list of strings")
     
-    # Check if tx2gene file exists
-    if tx2gene is not None:
-        if not os.path.exists(tx2gene):
-            raise ValueError("'tx2gene' file does not exist")
+    if tx2gene is not None and not os.path.exists(tx2gene):
+        raise ValueError("'tx2gene' file does not exist")
         
-    # Check the method to generate estimated counts using abundance estimates
     valid_countsFromAbundance = ["no", "scaledTPM", "lengthScaledTPM", "dtuScaledTPM"]
     if countsFromAbundance not in valid_countsFromAbundance:
         raise ValueError(f"Invalid 'countsFromAbundance': {countsFromAbundance}")
-    else:
-        if countsFromAbundance != "no" and tx2gene is None:
-            raise ValueError("tx2gene file must be provided to use 'countsFromAbundance'")
-        if countsFromAbundance == "dtuScaledTPM" and not tx_out:
+    elif countsFromAbundance == "dtuScaledTPM":
+        if tx2gene is None:
+            raise ValueError("tx2gene file must be provided to use 'dtuScaledTPM'")
+        if not tx_out:
             raise ValueError("dtuScaledTPM can only be used with tx_out=True")
 
     if not tx_in and tx_out:
@@ -115,10 +112,35 @@ def read_rsem(folders,
                 countsFromAbundance = "lengthScaledTPM"
             
             txi['counts'] = makeCountsFromAbundance(txi['counts'], txi['abundance'], length4CFA, countsFromAbundance)
-        return txi
+        #return txi
+        txi = txi
     else:
         if tx_in: 
             txiGene = summarizeToGene(txi, tx2gene, False, ignoreTxVersion, ignoreAfterBar, countsFromAbundance)
-            return txiGene
+            #return txiGene
+            txi = txiGene
         else:
-            return txi
+            #return txi
+            txi = txi
+    
+    # Crear el objeto AnnData, especificando explícitamente el dtype
+    adata = ad.AnnData(X=txi['counts'].T.astype(np.float32))
+    
+    # Agregar la abundancia como una capa
+    adata.layers['abundance'] = txi['abundance'].T.astype(np.float32)
+    
+    # Agregar las longitudes como una capa
+    adata.layers['length'] = txi['length'].T.astype(np.float32)
+    
+    # Agregar información de las variables (genes/transcritos)
+    adata.var_names = txi['counts'].index
+    adata.var['gene_ids'] = adata.var_names
+    
+    # Agregar información de las observaciones (muestras)
+    adata.obs_names = txi['counts'].columns
+    adata.obs['sample'] = adata.obs_names
+    
+    # Agregar información adicional a uns
+    adata.uns['countsFromAbundance'] = txi['countsFromAbundance']
+
+    return adata
