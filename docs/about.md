@@ -10,7 +10,7 @@ As mentioned [before](https://pymportx.readthedocs.io/en/latest/#:~:text=Its%20u
 
 ### PyDESeq2 and decoupleR
 
-The `anndata` output from **`pymportx`** can be used so as to perform a Differential Expression Analysis using PyDESeq2. Other analyses, such as reads quality control or volcano plotting, can be also conducted using the decoupleR package. Click on the links to access their documentation for more details.
+The `anndata` output from **`pymportx`** can be used to perform a Differential Expression Analysis using [PyDESeq2](https://pydeseq2.readthedocs.io/en/latest/). Other analyses, such as reads quality control or volcano plotting, can be also conducted using the [decoupleR](https://decoupler-py.readthedocs.io/en/latest/notebooks/bulk.html#Quality-control) package. Click on the links to access their documentation for more details.
 
 Here is an example for Differential Expression Analysis using PyDESeq2:
 
@@ -40,16 +40,19 @@ stat_res = DeseqStats(
     dds,
     contrast=["condition", 'treatment', 'control'],
     inference=inference
-)```
+)
+```
 
 ```
 # Compute Wald test
-stat_res.summary()```
+stat_res.summary()
+```
 
 ```
 # Extract results
 results_df = stat_res.results_df
-results_df```
+results_df
+```
 
 
 ### PyWGCNA
