@@ -14,8 +14,6 @@ Based on the [`tximport`](https://bioconductor.org/packages/release/bioc/html/tx
 
 ## Prerequisites
 -----
-****
-____
 
 Before installing **`pymportx`**, ensure you have the following prerequisites:
 
@@ -63,6 +61,7 @@ Its first column should contain transcript IDs, while the second one must contai
 
 
 ## Usage tutorial
+----
 
 #### Salmon
 
@@ -119,6 +118,7 @@ out = rsem.read_rsem(folders,
 ```
 
 ## Output
+----
 
 The output of our **``pymportx``** package is an [**Anndata**](https://anndata.readthedocs.io/en/latest/) file containing the counts, abundance and legth matrices. Its structure is the following:
 
