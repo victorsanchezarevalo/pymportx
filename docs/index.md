@@ -130,7 +130,7 @@ Or even their variance, configuring `varReduce = True` :
 
 The Output Anndata Python file will have the following structure:
 
-![Anndata](GráficoAnndata.png)
+![Anndata](Grafico_Anndata.png)
 
 
 ## License
