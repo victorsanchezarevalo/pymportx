@@ -15,7 +15,6 @@ results = salmon.read_salmon(salmon_folder_paths,
 ```
 
 ## Citation
-
 If you use `pymportx` in your research, please cite the following paper:
 
 Pena Gonzalez, P., Lozano-Paredes, D., Rojo, J. L., Bote-Curiel, L., & Sanchez-Arevalo Lobo, V. J. (2024). Pymportx: Facilitating Next-Generation Transcriptomics Analysis in Python. *bioRxiv*. doi:10.1101/2024.07.12.598873
@@ -25,3 +24,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Contact
 For more information, you can contact us through victor.sanchezarevalo@ufv.es or luis.bote@urjc.es.
+
+## Supplementary Material
+For additional test datasets, scripts, and results related to the paper, you can access the shared folder: [Test datasets and supplementary material](https://urjc-my.sharepoint.com/:f:/g/personal/luis_bote_urjc_es/EivzPNguZfNClLcGm6ZHKKcBF4q45s4s21SrOyxGqRag8Q?e=f0sXv4).
+
