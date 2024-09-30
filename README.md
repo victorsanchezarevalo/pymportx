@@ -26,5 +26,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 For more information, you can contact us through victor.sanchezarevalo@ufv.es or luis.bote@urjc.es.
 
 ## Supplementary Material
-For additional test datasets, scripts, and results related to the paper, you can access the shared folder: [Test datasets and supplementary material](https://urjc-my.sharepoint.com/:f:/g/personal/luis_bote_urjc_es/EivzPNguZfNClLcGm6ZHKKcBF4q45s4s21SrOyxGqRag8Q?e=f0sXv4).
+For additional test datasets, scripts, and results related to the paper, you can access this [shared folder](https://urjc-my.sharepoint.com/:f:/g/personal/luis_bote_urjc_es/EivzPNguZfNClLcGm6ZHKKcBF4q45s4s21SrOyxGqRag8Q?e=f0sXv4).
 
