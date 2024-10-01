@@ -53,7 +53,7 @@ results_df
 
 ### PyWGCNA
 
-
+The following example demonstrates how to perform a gene co-expression network analysis using PyWGCNA:
 
 ```
 wgcna = PyWGCNA.WGCNA(anndata=adata_cleaned)
